@@ -7,14 +7,15 @@ Recall the BIP32 Derivation Path definition:
 m / purpose' / coin_type' / account' / change / address_index
 </pre>
 
-==Purpose==
+
+###### Purpose
 
 Purpose is a constant set to 44' (or 0x8000002C) following the BIP43 recommendation.
 It indicates that the subtree of this node is used according to this specification.
 
 Hardened derivation is used at this level.
 
-==Coin type==
+###### Coin type
 
 One master node (seed) can be used for unlimited number of independent
 cryptocoins such as Bitcoin, Litecoin or Ethereum. However, sharing the same
@@ -30,7 +31,7 @@ Ethos has defined many of the coins in the ETHOS-44 standard. See "Registered co
 
 Hardened derivation is used at this level.
 
-==Account==
+###### Account
 
 This level splits the key space into independent user identities,
 so the wallet never mixes the coins across different accounts.
@@ -47,7 +48,7 @@ Hardened derivation is used at this level.
 
 Different account types (individual, custodial etc.) have been defined in the ETHOS-44 standard.
 
-==Change==
+###### Change
 
 Constant 0 is used for external chain and constant 1 for internal chain (also
 known as change addresses). External chain is used for addresses that are meant
@@ -57,7 +58,7 @@ wallet and is used for return transaction change.
 
 Public derivation is used at this level.
 
-==Index==
+###### Index
 
 Addresses are numbered from index 0 in sequentially increasing manner.
 This number is used as child index in BIP32 derivation.
