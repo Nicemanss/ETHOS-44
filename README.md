@@ -1,2 +1,303 @@
-# ETHOS-44
-Ethos BIP44 Classification Standard
+# ETHOS-44 - Ethos Standardization for BIP44 Accounts
+
+## Abstract
+
+Recall the BIP32 Derivation Path definition:
+<pre>
+m / purpose' / coin_type' / account' / change / address_index
+</pre>
+
+===Purpose===
+
+Purpose is a constant set to 44' (or 0x8000002C) following the BIP43 recommendation.
+It indicates that the subtree of this node is used according to this specification.
+
+Hardened derivation is used at this level.
+
+===Coin type===
+
+One master node (seed) can be used for unlimited number of independent
+cryptocoins such as Bitcoin, Litecoin or Ethereum. However, sharing the same
+space for various cryptocoins has some disadvantages.
+
+This level creates a separate subtree for every cryptocoin, avoiding
+reusing addresses across cryptocoins and improving privacy issues.
+
+Coin type is a constant, set for each cryptocoin. Cryptocoin developers may ask
+for registering unused number for their project.
+
+Ethos has defined many of the coins in the ETHOS-44 standard. See "Registered coin types" below.
+
+Hardened derivation is used at this level.
+
+===Account===
+
+This level splits the key space into independent user identities,
+so the wallet never mixes the coins across different accounts.
+
+Users can use these accounts to organize the funds in the same
+fashion as bank accounts; for donation purposes (where all
+addresses are considered public), for saving purposes,
+for common expenses etc.
+
+Accounts are numbered from index 0 in sequentially increasing manner.
+This number is used as child index in BIP32 derivation.
+
+Hardened derivation is used at this level.
+
+Different account types (individual, custodial etc.) have been defined in the ETHOS-44 standard.
+
+===Change===
+
+Constant 0 is used for external chain and constant 1 for internal chain (also
+known as change addresses). External chain is used for addresses that are meant
+to be visible outside of the wallet (e.g. for receiving payments). Internal
+chain is used for addresses which are not meant to be visible outside of the
+wallet and is used for return transaction change.
+
+Public derivation is used at this level.
+
+===Index===
+
+Addresses are numbered from index 0 in sequentially increasing manner.
+This number is used as child index in BIP32 derivation.
+
+Public derivation is used at this level.
+
+BIP-0044 defines a logical hierarchy for deterministic wallets.
+Level 2 of the hierarchy describes a coin type in use.
+
+## Motivation
+
+Existing BIP44 standards don't include the full range of accounts/coins that are required for a global financial ecosystem. Ethos.io presents the ETHOS-44 standard to solve many of these issues. 
+
+## Registered account types
+
+index | hexa       | account type
+------|------------|-----------------------------------
+0     | 0x80000000 | Individual
+1     | 0x80000001 | Joint
+2     | 0x80000002 | Custodial
+3     | 0x80000003 | Split
+
+An individual account is always held by a single person. The key is not sharded and the individual has complete control over the account.
+
+A joint account is similar to a joint bank account. 1 or more parties have "signing privledges" to funds in an account which is designated as a joint account. The key is not sharded, but is shared between individuals.
+
+A custodial account has a private key which has been sharded 2 or more times. A shard is shared with a custodian, requiring them to sign off or clear a transaction. The account holder can securely share their shard with the custodian who then signs the transaction and destroys their shard.
+
+A split account has been sharded more than 3 times and is split among several parties. This can be thought of as a generic implementation of n-of-n multisig. All n shards are required to sign a transaction. Shards could be split among family members, instutions or other trusted parties. 
+
+## Registered coin types
+
+These are the registered coin types for usage in level 2 of BIP44 described in chapter "Coin type".
+
+All these constants are used as hardened derivation.
+
+index | hexa       | coin
+------|------------|-----------------------------------
+0     | 0x80000000 | [Bitcoin](https://bitcoin.org/)
+1     | 0x80000001 | Testnet (all coins)
+2     | 0x80000002 | [Litecoin](https://litecoin.org/)
+3     | 0x80000003 | [Dogecoin](https://github.com/dogecoin/dogecoin)
+4     | 0x80000004 | Reddcoin
+5     | 0x80000005 | [Dash](https://github.com/dashpay/dash) (ex Darkcoin)
+6     | 0x80000006 | [Peercoin](https://peercoin.net/)
+7     | 0x80000007 | [Namecoin](http://namecoin.info/)
+8     | 0x80000008 | [Feathercoin](https://www.feathercoin.com/)
+9     | 0x80000009 | [Counterparty](http://counterparty.io/)
+10    | 0x8000000a | [Blackcoin](http://blackcoin.co/)
+11    | 0x8000000b | [NuShares](https://nubits.com/nushares/introduction)
+12    | 0x8000000c | NuBits
+13    | 0x8000000d | Mazacoin
+14    | 0x8000000e | Viacoin
+15    | 0x8000000f | ClearingHouse
+16    | 0x80000010 | Rubycoin
+17    | 0x80000011 | Groestlcoin
+18    | 0x80000012 | Digitalcoin
+19    | 0x80000013 | Cannacoin
+20    | 0x80000014 | DigiByte
+21    | 0x80000015 | [Open Assets](https://github.com/OpenAssets/open-assets-protocol)
+22    | 0x80000016 | Monacoin
+23    | 0x80000017 | Clams
+24    | 0x80000018 | Primecoin
+25    | 0x80000019 | Neoscoin
+26    | 0x8000001a | Jumbucks
+27    | 0x8000001b | ziftrCOIN
+28    | 0x8000001c | Vertcoin
+29    | 0x8000001d | NXT
+30    | 0x8000001e | Burst
+31    | 0x8000001f | MonetaryUnit
+32    | 0x80000020 | Zoom
+33    | 0x80000021 | Vpncoin
+34    | 0x80000022 | [Canada eCoin](https://github.com/Canada-eCoin/)
+35    | 0x80000023 | ShadowCash
+36    | 0x80000024 | [ParkByte](https://github.com/parkbyte/)
+37    | 0x80000025 | Pandacoin
+38    | 0x80000026 | StartCOIN
+39    | 0x80000027 | [MOIN](https://discovermoin.com)
+40    | 0x80000028 | [Expanse](http://www.expanse.tech/)
+41    | 0x80000029 | [Einsteinium](https://www.emc2.foundation/)
+42    | 0x8000002a | [Decred](https://decred.org/)
+43    | 0x8000002b | [NEM](https://github.com/NemProject)
+44    | 0x8000002c | [Particl](https://particl.io/)
+45    | 0x8000002d | [Argentum](http://www.argentum.io)
+46    | 0x8000002e | [Libertas](https://github.com/dangershony/Libertas)
+47    | 0x8000002f | [Posw coin](https://poswallet.com)
+48    | 0x80000030 | [Shreeji](https://github.com/SMJBIT/SHREEJI)
+49    | 0x80000031 | Global Currency Reserve (GCRcoin)
+50    | 0x80000032 | [Novacoin](https://github.com/novacoin-project/novacoin)
+51    | 0x80000033 | [Asiacoin](https://github.com/AsiaCoin/AsiaCoinFix)
+52    | 0x80000034 | [Bitcoindark](https://github.com/jl777/btcd)
+53    | 0x80000035 | [Dopecoin](https://github.com/dopecoin-dev/DopeCoinV3)
+54    | 0x80000036 | [Templecoin](https://github.com/9cat/templecoin)
+55    | 0x80000037 | [AIB](https://github.com/iobond/aib)
+56    | 0x80000038 | [EDRCoin](https://github.com/EDRCoin/EDRcoin-src)
+57    | 0x80000039 | [Syscoin](https://github.com/syscoin/syscoin2)
+58    | 0x8000003a | [Solarcoin](https://github.com/onsightit/solarcoin)
+59    | 0x8000003b | [Smileycoin](https://github.com/tutor-web/smileyCoin)
+60    | 0x8000003c | [Ether](https://ethereum.org/ether)
+61    | 0x8000003d | [Ether Classic](https://ethereumclassic.github.io)
+62    | 0x8000003e | [Pesobit](https://github.com/pesobitph/pesobit-source)
+63    | 0x8000003f | [Landcoin](http://landcoin.co/)
+64    | 0x80000040 | [Open Chain](https://github.com/openchain/)
+65    | 0x80000041 | [Bitcoinplus](https://bitcoinplus.org)
+66    | 0x80000042 | [Internet of People](http://www.fermat.org)
+67    | 0x80000043 | [Nexus](http://www.nexusearth.com/)
+68    | 0x80000044 | [InsaneCoin](http://insanecoin.com)
+69    | 0x80000045 | [OKCash](https://github.com/okcashpro/)
+70    | 0x80000046 | [BritCoin](https://britcoin.com)
+71    | 0x80000047 | [Compcoin](https://compcoin.com)
+72    | 0x80000048 | [Crown](http://crown.tech/)
+73    | 0x80000049 | [BelaCoin](http://belacoin.org)
+74    | 0x8000004a | [Compcoin](https://github.com/lodyagin/compcoin)
+75    | 0x8000004b | [FujiCoin](http://www.fujicoin.org/)
+76    | 0x8000004c | [MIX](https://www.mix-blockchain.org/)
+77    | 0x8000004d | [Verge](https://github.com/vergecurrency/verge/)
+78    | 0x8000004e | [Electronic Gulden](https://egulden.org/)
+79    | 0x8000004f | [ClubCoin](https://clubcoin.co/)
+80    | 0x80000050 | [RichCoin](https://richcoin.us/)
+81    | 0x80000051 | [Potcoin](http://potcoin.com/)
+82    | 0x80000052 | Quarkcoin
+83    | 0x80000053 | Terracoin
+84    | 0x80000054 | Gridcoin
+85    | 0x80000055 | [Auroracoin](http://auroracoin.is/)
+86    | 0x80000056 | IXCoin
+87    | 0x80000057 | [Gulden](https://Gulden.com/)
+88    | 0x80000058 | [BitBean](http://bitbean.org/)
+89    | 0x80000059 | [Bata](http://bata.io/)
+90    | 0x8000005a | [Myriadcoin](http://myriadcoin.org)
+91    | 0x8000005b | [BitSend](http://bitsend.info)
+92    | 0x8000005c | [Unobtanium](http://http://unobtanium.uno/)
+93    | 0x8000005d | [MasterTrader](https://github.com/CrypticApplications/MTR-Update/)
+94    | 0x8000005e | [GoldBlocks](https://github.com/goldblockscoin/goldblocks)
+95    | 0x8000005f | [Saham](https://github.com/SahamDev/SahamDev)
+96    | 0x80000060 | [Chronos](https://github.com/chronoscoin/Chronoscoin)
+97    | 0x80000061 | [Ubiquoin](https://github.com/ubiquoin/ubiq)
+98    | 0x80000062 | [Evotion](https://github.com/evoshiun/Evotion)
+99    | 0x80000063 | [SaveTheOcean](https://github.com/SaveTheOceanMovement/SaveTheOceanCoin)
+100   | 0x80000064 | [BigUp](https://github.com/BigUps/)
+101   | 0x80000065 | [GameCredits](https://github.com/gamecredits-project)
+102   | 0x80000066 | [Dollarcoins](https://github.com/dollarcoins/source)
+103   | 0x80000067 | [Zayedcoin](https://github.com/ZayedCoin/Zayedcoin)
+104   | 0x80000068 | [Dubaicoin](https://github.com/DubaiCoinDev/DubaiCoin)
+105   | 0x80000069 | [Stratis](http://www.stratisplatform.com)
+106   | 0x8000006a | [Shilling](https://github.com/yavwa/Shilling)
+107   | 0x8000006b | [MarsCoin](http://www.marscoin.org/)
+108   | 0x8000006c | [Ubiq (UBQ)](https://github.com/Ubiq)
+109   | 0x8000006d | [Pesetacoin](http://pesetacoin.info/)
+110   | 0x8000006e | [Neurocoin](https://neurocoin.org)
+111   | 0x8000006f | [ARK](https://ark.io)
+112   | 0x80000070 | [UltimateSecureCashMain](http://ultimatesecurecash.info)
+113   | 0x80000071 | [Hempcoin](http://hempcoin.org)
+114   | 0x80000072 | [Linx](https://mylinx.io)
+115   | 0x80000073 | [Ecoin](https://www.ecoinsource.com)
+116   | 0x80000074 | [Denarius](https://denarius.io)
+117   | 0x80000075 | [Pinkcoin](http://getstarted.with.pink)
+118   | 0x80000076 | [PiggyCoin](https://www.piggy-coin.com/)
+119   | 0x80000077 | [Pivx (PIVX)](https://github.com/PIVX-Project/PIVX)
+120   | 0x80000078 | [Flashcoin](https://flashcoin.io)
+121   | 0x80000079 | [Zencash](https://zensystem.io)
+122   | 0x8000007a | [Putincoin](https://putincoin.info)
+123   | 0x8000007b | [BitZeny](http://bitzeny.org/)
+124   | 0x8000007c | [Unify](http://unifycryptocurrency.com)
+125   | 0x8000007d | [StealthCoin (XST)](http://www.stealthcoin.com)
+126   | 0x8000007e | [Breakout Coin (BRK)](http://www.breakoutcoin.com)
+127   | 0x8000007f | [Vcash](https://vcash.info)
+128   | 0x80000080 | [Monero](https://getmonero.org/)
+129   | 0x80000081 | [Voxels](https://www.voxelus.com)
+130   | 0x80000082 | [NavCoin](https://github.com/navcoindev/navcoin2)
+131   | 0x80000083 | [Factom Factoids](https://github.com/FactomProject/FactomDocs/blob/master/wallet_info/wallet_test_vectors.md)
+132   | 0x80000084 | [Factom Entry Credits](https://github.com/FactomProject)
+133   | 0x80000085 | [Zcash](https://z.cash)
+134   | 0x80000086 | [Lisk](https://lisk.io/)
+135   | 0x80000087 | [Steem](http://steem.io)
+136   | 0x80000088 | [ZCoin](https://zcoin.io)
+137   | 0x80000089 | [Rootstock](http://www.rsk.co/)
+138   | 0x8000008a | [Giftblock](https://github.com/gyft/giftblock)
+139   | 0x8000008b | [RealPointCoin](https://github.com/MaxSmile/RealPointCoinQt)
+140   | 0x8000008c | [LBRY Credits (LBC)](https://lbry.io/)
+141   | 0x8000008d | [Komodo (KMD)](https://komodoplatform.com/)
+142   | 0x8000008e | [bisq Token (BSQ)](http://bisq.io/)
+143   | 0x8000008f | [Riecoin (RIC)](https://github.com/riecoin/riecoin)
+144   | 0x80000090 | [Ripple (XRP)](https://ripple.com)
+145   | 0x80000091 | [Bitcoin Cash](https://www.bitcoincash.org)
+146   | 0x80000092 | [Neblio (NEBL)](https://nebl.io)
+147   | 0x80000093 | [ZClassic (ZCL)](http://zclassic.org/)
+148   | 0x80000094 | [Stellar Lumens](https://www.stellar.org/)
+149   | 0x80000095 | [NoLimitCoin2 (NLC2)](http://www.nolimitcoin.org)
+150   | 0x80000096 | [WhaleCoin (WHL)](https://whalecoin.org/)
+151   | 0x80000097 | [EuropeCoin](https://www.europecoin.eu.org/)
+152   | 0x80000098 | [Diamond](http://bit.diamonds)
+153   | 0x80000099 | [Bytom (BTM)](https://bytom.io)
+154   | 0x8000009a | [Biocoin](https://biocoin.bio)
+155   | 0x8000009b | [Whitecoin (XWC)](https://www.whitecoin.info)
+156   | 0x8000009c | [Bitcoin Gold](http://www.btcgpu.org)
+157   | 0x8000009d | [Bitcoin 2x](https://medium.com/@DCGco/bitcoin-scaling-agreement-at-consensus-2017-133521fe9a77)
+158   | 0x8000009e | [SuperSkynet](http://wwww.superskynet.org/)
+159   | 0x8000009f | [TOACoin](http://www.toacoin.com)
+160   | 0x800000a0 | [Bitcore](https://bitcore.cc)
+161   | 0x800000a1 | [Adcoin](https://www.getadcoin.com/)
+162   | 0x800000a2 | [Bridgecoin](https://bridgecoin.org/)
+163   | 0x800000a3 | [Ellaism](https://ellaism.org)
+164   | 0x800000a4 | [Pirl](https://pirl.io)
+165   | 0x800000a5 | [RaiBlocks](https://raiblocks.com)
+166   | 0x800000a6 | [Vivo](https://www.vivocrypto.com/)
+167   | 0x800000a7 | [Firstcoin](http://firstcoinproject.com)
+168   | 0x800000a8 | [Helleniccoin](http://www.helleniccoin.gr/)
+169   | 0x800000a9 | [BUZZ](http://www.buzzcoin.info/)
+170   | 0x800000aa | [Ember](https://www.embercoin.io/)
+171   | 0x800000ab | [Hcash](https://h.cash)
+172   | 0x800000ac | [HTMLCOIN](https://htmlcoin.com/)
+173   | 0x800000ad | [Obsidian](https://obsidianplatform.com/)
+174   | 0x800000ae | [OnixCoin](https://www.onixcoin.com/)
+175   | 0x800000af | [Ravencoin](https://ravencoin.org/)
+223   | 0x800000df | [AskCoin](https://askcoin.org)
+224   | 0x800000e0 | [Smartcash](https://smartcash.cc)
+255   | 0x800000ff | [SmartHoldem](https://smartholdem.io)
+258   | 0x80000102 | [Zen Protocol](https://www.zenprotocol.com/)
+328   | 0x80000148 | [Blocknet](https://blocknet.co/)
+333   | 0x8000014d | [MemCoin](https://memcoin.org)
+444   | 0x800001bc | [Phore](https://phore.io)
+555   | 0x8000022b | [Bitcoin Smart (BCS)](http://bcs.info)
+666   | 0x8000029a | [Achain](https://www.achain.com/)
+777   | 0x80000309 | [Bitcoin World (BTW)](http://btw.one)
+888   | 0x80000378 | [NEO (NEO)](https://neo.org/)
+999   | 0x80000643 | [Bitcoin Diamond (BCD)](http://btcd.io/)
+1337  | 0x80000539 | [Defcoin](http://defcoin-ng.org)
+1524  | 0x800005F4 | [Taler](http://taler.site)
+1815  | 0x80000717 | [Cardano (ADA)](https://www.cardanohub.org/en/home/)
+8888  | 0x800022b8 | [Super Bitcoin (SBTC)](https://www.superbtc.org)
+8999  | 0x80002327 | [Bitcoin Pay (BTP)](http://www.btceasypay.com)
+9888  | 0x800026a0 | [Bitcoin Faith (BTF)](http://bitcoinfaith.org)
+37310 | 0x800091be | [Rootstock Testnet](http://www.rsk.co/)
+
+Coin types will be added only if there is a wallet implementing BIP-0044 for desired coin.
+
+## Libraries
+
+* TBD
+
+## References
+
+* [BIP-0044: Multi-Account Hierarchy for Deterministic Wallets](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki)
