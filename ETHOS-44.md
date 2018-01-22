@@ -76,18 +76,18 @@ Existing BIP44 standards don't include the full range of accounts/coins that are
 
 index | hexa       | account type
 ------|------------|-----------------------------------
-0     | 0x80000000 | Individual
-1     | 0x80000001 | Joint
-2     | 0x80000002 | Custodial
-3     | 0x80000003 | Split
+0     | 0x80000000 | Self Custody
+1     | 0x80000001 | Joint Custody
+2     | 0x80000002 | External Custody
+3     | 0x80000003 | Split Custody
 
-An individual account is always held by a single person. The key is not sharded and the individual has complete control over the account.
+A Self Custodied Account is always held by a single person. The key is not sharded and the individual has complete control over the account. Legally, only the individual who holds the seed has custody.
 
-A joint account is similar to a joint bank account. 1 or more parties have "signing privledges" to funds in an account which is designated as a joint account. The key is not sharded, but is shared between individuals.
+A Joint Custodied Account is similar to a joint bank account. 1 or more parties have "signing privledges" to funds in an account which is designated as a joint account. The key is not sharded, but is shared between individuals. Both individuals who hold the key legally have custody.
 
-A custodial account has a private key which has been sharded 2 or more times. A shard is shared with a custodian, requiring them to sign off or clear a transaction. The account holder can securely share their shard with the custodian who then signs the transaction and destroys their shard.
+An External Custody Account has a private key which has been sharded 2 or more times. A shard is shared with a custodian, requiring them to sign off or clear a transaction. The account holder can securely share their shard with the custodian who then signs the transaction and destroys their shard. Whoever is receiving the key shard to make the key whole is the custodian during the time that they have the full private key in storage.
 
-A split account has been sharded more than 3 times and is split among several parties. This can be thought of as a generic implementation of n-of-n multisig. All n shards are required to sign a transaction. Shards could be split among family members, instutions or other trusted parties. 
+A Split Custodied Account has been sharded more than 3 times and is split among several parties. This can be thought of as a generic implementation of n-of-n multisig. All n shards are required to sign a transaction. Shards could be split among family members, instutions or other trusted parties. Only the individual who has the entire key to sign a transaction has custody during the time they have the full private key in storage.
 
 ## Registered coin types
 
