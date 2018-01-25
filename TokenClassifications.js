@@ -11,7 +11,7 @@ module.exports = {
 			description: "Bitcoin is a currency born into the digital age. When using Bitcoin for the first time people should get an idea of how it works. Digital money is different than the traditional finance world is used to. It offers three core values in which many currencies cannot attain: Decentralization Open Source and Peer-to-Peer networking. It is important to get an idea of how to use Bitcoin before investing in it or starting wallet. At Bitcoin.com we are very passionate about the protocol and want to help you learn along the way. There is a lot to learn but it is not beyond your grasp. Bitcoin is a truly beautiful innovation and it has the capacity to change the world.",
 			technology: "Bitcoin",
 			location: "Switzerland",
-			website: "https://www.bitcoin.com/"
+			website: "https://www.bitcoin.org/"
 		},
 		{
 			dossierId: 2,
