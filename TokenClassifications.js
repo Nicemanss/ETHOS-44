@@ -1,5 +1,5 @@
 module.exports = {
-    customers: [
+    tokens: [
         {
 			dossierId: 1,
 			coinId: 1,
@@ -10,7 +10,7 @@ module.exports = {
 			category: "Digital Asset",
 			description: "Bitcoin is a currency born into the digital age. When using Bitcoin for the first time people should get an idea of how it works. Digital money is different than the traditional finance world is used to. It offers three core values in which many currencies cannot attain: Decentralization Open Source and Peer-to-Peer networking. It is important to get an idea of how to use Bitcoin before investing in it or starting wallet. At Bitcoin.com we are very passionate about the protocol and want to help you learn along the way. There is a lot to learn but it is not beyond your grasp. Bitcoin is a truly beautiful innovation and it has the capacity to change the world.",
 			technology: "Bitcoin",
-			location: "Zug Switzerland",
+			location: "Switzerland",
 			website: "https://www.bitcoin.com/"
 		},
 		{
@@ -23,7 +23,7 @@ module.exports = {
 			category: "Infrastructure",
 			description: "Ethereum is not just a currency. It’s a Blockchain platform powered by the Ether cryptocurrency.Ethereum is a  decentralized platform that runs smart contracts: applications that run exactly as programmed without any possibility of downtime censorship fraud or third party interference.The value token of the Ethereum blockchain is called ether. It is listed under the code ETH and traded on cryptocurrency exchanges. It is also used to pay for transaction fees and computational services on the Ethereum network.Ethereum is (as of 2017) the leading blockchain platform for initial coin offering project with over 50% market share.",
 			technology: "Ethereum Smart Contracts",
-			location: "Internet",
+			location: "Switzerland",
 			website: "https://www.ethereum.org/"
 		},
 		{
@@ -35,8 +35,9 @@ module.exports = {
 			class: "CRYPTOCURRENCY",
 			category: "Digital Asset",
 			description: "Litecoin is a peer-to-peer Internet currency that enables instant near-zero cost payments to anyone in the world. Litecoin is an open source global payment network that is fully decentralized without any central authorities. Mathematics secures the network and empowers individuals to control their own finances. Litecoin features faster transaction confirmation times and improved storage efficiency than the leading math-based currency. With substantial industry support trade volume and liquidity Litecoin is a proven medium of commerce complementary to Bitcoin.",
-			technology: "Bitcoinhttps://litecoin.org/",
-			location: "https://en.wikipedia.org/wiki/Litecoinhttps://www.reddit.com/r/litecoin/" 
+			technology: "Bitcoinh",
+			location: "",
+			website: "ttps://litecoin.org/"
 		},
 		{
 			dossierId: 4,
@@ -47,8 +48,9 @@ module.exports = {
 			class: "CRYPTOCURRENCY",
 			category: "Privacy",
 			description: "Monero is a secure private and untraceable cryptocurrency. It is open-source and accessible to all. With Monero you are your own bank. Only you control and are responsible for your funds. Your accounts and transactions are kept private from prying eyes.",
-			technology: "Ring Signatures Obfuscationhttps://getmonero.org/",
-			location: "https://en.wikipedia.org/wiki/Monero_(cryptocurrency)https://www.reddit.com/r/Monero/" 
+			technology: "Ring Signatures Obfuscation",
+			location: "",
+			website: "https://getmonero.org/"
 		},
 		{
 			dossierId: 5,
@@ -85,8 +87,9 @@ module.exports = {
 			class: "CRYPTOCURRENCY",
 			category: "Digital Asset",
 			description: "Bitcoin Cash brings sound money to the world.  Merchants and users are empowered with low fees and reliable confirmations. The future shines brightly with unrestricted growth global adoption permissionless innovation and decentralized development.",
-			technology: "8 MB Blocksize Bitcoinhttps://www.bitcoincash.org/",
-			location: "https://en.wikipedia.org/wiki/Bitcoin_Cash" 
+			technology: "8 MB Blocksize Bitcoin",
+			location: "",
+			website: "https://www.bitcoincash.org/"
 		},
 		{
 			dossierId: 8,
@@ -98,8 +101,8 @@ module.exports = {
 			category: "Governance",
 			description: "Dash (DASH) is a privacy-centric digital currency with instant transactions. It is based on the Bitcoin software but it has a two tier network that improves it. Dash allows you to remain anonymous while you make transactions similar to cash. With Bitcoin transactions are published to the blockchain and you can prove who made them or to whom but with Dash the anonymization technology makes it impossible to trace them. This is important because the blockchain is accessible to anyone with an internet connection – a significant drawback for those don’t wish their transaction history and balances to be publicly available. Dash does this through a mixing protocol utilizing an innovative decentralized network of servers called Masternodes avoiding the need for a trusted third party that could compromise the integrity of the system. Dash transactions are almost instantly confirmed by the Masternodes network. This is a great improvement on Bitcoin’s system where confirmations take much longer because all the work is done by the miners. ",
 			technology: "Privacy Fast Transactions",
-			location: "https://www.dash.org/",
-			website: "https://en.wikipedia.org/wiki/Dash_(cryptocurrency)"
+			location: "",
+			website: "https://www.dash.org/"
 		},
 		{
 			dossierId: 9,
@@ -111,7 +114,8 @@ module.exports = {
 			category: "Governance",
 			description: "POW+POS Open-Governance Model. Every Hcash holder has the ability to participate in significant community-wide decision-making including protocol updating and upgrading through a POS mining mechanism.",
 			technology: "POW + POS Governance Model",
-			location: "Melbourne VIC" 
+			location: "Melbourne VIC",
+			website: ""
 		},
 		{
 			dossierId: 10,
@@ -123,8 +127,8 @@ module.exports = {
 			category: "Platform",
 			description: "IOTA is a revolutionary new transactional settlement and data integrity layer for the Internet of Things. It’s based on a new distributed ledger architecture the Tangle which overcomes the inefficiencies of current Blockchain designs and introduces a new way of reaching consensus in a decentralized peer-to-peer system. For the first time ever through IOTA people can transfer money without any fees. This means that even infinitesimally small nanopayments can be made through IOTA. IOTA is the missing puzzle piece for the Machine Economy to fully emerge and reach its desired potential. We envision IOTA to be the public permissionless backbone for the Internet of Things that enables true interoperability between all devices. ",
 			technology: "Quantum Resistant DAG",
-			location: "https://iota.org/",
-			website: "https://www.reddit.com/r/DASH/" 
+			location: "",
+			website: "https://iota.org/" 
 		},
 		{
 			dossierId: 11,
@@ -136,7 +140,8 @@ module.exports = {
 			category: "Infrastructure",
 			description: "NEO formerly Antshares is China's first ever open source blockchain. Founded in 2014 NEO’s mission has been to reinvent the way commerce is done. We believe technology drives progress and together we can create the future. Motivated by this NEO has been created to shift our traditional economy into the new era of the Smart Economy.",
 			technology: "Quantum Resistant Multi-Language Support Smart Contracts",
-			location: "https://www.reddit.com/r/NEO/" 
+			location: "",
+			website: "https://neo.org"
 		},
 		{
 			dossierId: 12,
@@ -148,8 +153,8 @@ module.exports = {
 			category: "Platform",
 			description: "OmiseGO is a public Ethereum-based financial technology for use in mainstream digital wallets that enables real-time peer-to-peer value exchange and payment services agnostically across jurisdictions and organizational silos and across both fiat money and decentralized currencies. Designed to enable financial inclusion and disrupt existing institutions access will be made available to everyone via the OmiseGO network and digital wallet framework starting in Q4 2017. ",
 			technology: "Ethereum Smart Contracts Finance",
-			location:  "https://omg.omise.co/",
-			website: "https://www.reddit.com/r/omise_go/" 
+			location:  "",
+			website: "https://omg.omise.co/" 
 		},
 		{
 			dossierId: 13,
@@ -161,20 +166,21 @@ module.exports = {
 			category: "Platform",
 			description: "Combining a modified Bitcoin Core infrastructure with an intercompatible version of the Ethereum Virtual Machine (EVM) Qtum merges the reliability of Bitcoin’s unfailing blockchain with the endless possibilities provided by smart contracts. Designed with stability modularity and interoperability in mind Qtum is the foremost toolkit for building trusted decentralized applications suited for real-world business oriented use cases. Its hybrid nature in combination with a first-of-its-kind PoS consensus protocol allow Qtum applications to be compatible with major blockchain ecosystems while providing native support for mobile devices and IoT appliances.",
 			technology: "Bitcoin + Ethereum Hybrid; POS; Smart Contracts",
-			location: "https://qtum.org/en",
-			website: "https://www.reddit.com/r/QTUM/" 
+			location: "",
+			website: "https://qtum.org/en" 
 		},
 		{
 			dossierId: 14,
 			coinId: 14,
 			name: "BitConnect",
 			symbol: "BCC",
-			cap: "MidCap",
-			class: "UNRATED",
-			category: "Platform",
-			description: "BitConnect Coin is an open source peer-to-peer community driven decentralized cryptocurrency that allow people to store and invest their wealth in a non-government controlled currency and even earn a substantial interest on investment. This means anyone holding BitConnect Coin in their wallet will receive interest on their balance in return for helping maintain security of the network.",
-			technology: "Platform for Bitcoin Exchange",
-			location:  "https://bitconnect.co/" 
+			cap: "",
+			class: "SCAM",
+			category: "PONZI",
+			description: "Bitconnect was recently served with a cease and desist order form both the Texas and North Carolina State Securities Boards citing it a Ponzi scheme.",
+			technology: "",
+			location:  "",
+			website: ""
 		},
 		{
 			dossierId: 15,
@@ -186,8 +192,8 @@ module.exports = {
 			category: "Infrastructure",
 			description: "Lisk is a public blockchain platform that provides decentralized blockchain apps. ",
 			technology: "Blockchain for dApps",
-			location:  "https://lisk.io/",
-			website: "https://en.wikipedia.org/wiki/Lisk"
+			location:  "",
+			website: "https://lisk.io/"
 		},
 		{
 			dossierId: 16,
@@ -199,8 +205,8 @@ module.exports = {
 			category: "Infrastructure",
 			description: "Stratis' enterprise-grade development platform nStratis is a simple and affordable end-to-end solution for native C# and .Net blockchain applications: solutions tailored exactly to your specific needs – at very competitive rates. Our proprietary blockchain combines the latest advances in security and stability of Bitcoin with the latest breakthroughs in network speed scalability and customization.",
 			technology: "Smart Contracts Sidechains .NET Framework",
-			location:  "https://stratisplatform.com/",
-			website: "https://www.reddit.com/r/Stratis/" 
+			location:  "",
+			website: "https://stratisplatform.com/" 
 		},
 		{
 			dossierId: 17,
@@ -212,8 +218,8 @@ module.exports = {
 			category: "Infrastructure",
 			description: "The Waves platform is described as a Open Blockchain platform one that takes the functionalities of Bitcoin and extends them further beyond the simple application of value transfer. The idea is not to create a replacement for Bitcoin but rather a platform where Bitcoin cryptos fiat currencies and all types of real-world commodities and assets can be issued transferred and exchanged in a fully decentralized manner. ",
 			technology: "Decentralized Exchange Blockchain Platform",
-			location:  "https://wavesplatform.com/",
-			website: "https://www.reddit.com/r/Wavesplatform/" 
+			location:  "",
+			website: "https://wavesplatform.com/" 
 		},
 		{
 			dossierId: 18,
@@ -225,8 +231,8 @@ module.exports = {
 			category: "Privacy",
 			description: "Bitcoin and most cryptocurrencies expose your entire payment history to the public. Zcash is the first open permissionless cryptocurrency that can fully protect the privacy of transactions using zero-knowledge cryptography. ",
 			technology: "Zero-knowledge cryptography",
-			location: "https://z.cash/",
-			website: "https://en.wikipedia.org/wiki/Zcash"
+			location: "",
+			website: "https://z.cash/"
 		},
 		{
 			dossierId: 19,
@@ -238,8 +244,8 @@ module.exports = {
 			category: "Privacy",
 			description: "Bytecoin is an open decentralized cryptocurrency. Anyone interested can join Bytecoin network and take part in currency development. As well as the Internet Bytecoin is international by its nature. Bytecoin allows safe and secure transactions around the globe and offers the convenience of instant fee-free money transactions.",
 			technology: "Cryptonote Protocol",
-			location: "https://bytecoin.org/",
-			website: "https://en.wikipedia.org/wiki/CryptoNote#Bytecoin_.28BCN.29"
+			location: "",
+			website: "https://bytecoin.org/"
 		},
 		{
 			dossierId: 20,
@@ -251,7 +257,8 @@ module.exports = {
 			category: "Infrastructure",
 			description: "BitShares looks to extend the innovation of the blockchain to all industries that rely upon the internet to provide their services. Whether its banking stock exchanges lotteries voting music auctions or many others a digital public ledger allows for the creation of distributed autonomous companies (or DACs) that provide better quality services at a fraction of the cost incurred by their more traditional centralized counterparts. The advent of DACs ushers in a new paradigm in organizational structure in which companies can run without any human management and under the control of an incorruptible set of business rules. These rules are encoded in publicly auditable open source software distributed across the computers of the companies’ shareholders who effortlessly secure the company from arbitrary control. ",
 			technology: "Financial Services on Blockchain",
-			location: "https://bitshares.org/" 
+			location: "",
+			website: "https://bitshares.org/"
 		},
 		{
 			dossierId: 21,
@@ -263,7 +270,8 @@ module.exports = {
 			category: "Infrastructure",
 			description: "EOS.IO is software that introduces a blockchain architecture designed to enable vertical and horizontal scaling of decentralized applications (the “EOS.IO Software”). This is achieved through an operating system-like construct upon which applications can be built. The software provides accounts authentication databases asynchronous communication and the scheduling of applications across multiple CPU cores and/or clusters. The resulting technology is a blockchain architecture that has the potential to scale to millions of transactions per second eliminates user fees and allows for quick and easy deployment of decentralized applications.",
 			technology: "Software",
-			location: "https://eos.io/" 
+			location: "",
+			website: "https://eos.io/"
 		},
 		{
 			dossierId: 22,
@@ -274,9 +282,9 @@ module.exports = {
 			class: "FUNCTIONAL TOKEN",
 			category: "Infrastructure",
 			description: "Ethereum Classic is a decentralized platform that runs smart contracts: applications that run exactly as programmed without any possibility of downtime censorship fraud or third party interference.",
-			technology: "Smart Contractshttps://ethereumclassic.github.io/",
-			location: "https://en.wikipedia.org/wiki/Ethereum_Classic",
-			website: "https://www.reddit.com/r/EthereumClassic/" 
+			technology: "Smart Contracts",
+			location: "",
+			website: "https://ethereumclassic.github.io/" 
 		},
 		{
 			dossierId: 23,
@@ -284,11 +292,12 @@ module.exports = {
 			name: "TenX",
 			symbol: "PAY",
 			cap: "MidCap",
-			class: "TOKENIZED SECURITY (NON COMPLIANT)",
-			category: "Security",
+			class: "UNRATED",
+			category: "UNRATED",
 			description: "TenX found online at TenX.com is a cryptocurrency payment platform that consists of a wallet physical debit card bank account ATM access and more. Overall the company wants to introduce products that make it easier for you to use your cryptocurrencies in the “real world”.",
 			technology: "Debit Card/Wallet",
-			location:  "https://www.tenx.tech/" 
+			location:  "",
+			website: "https://www.tenx.tech/" 
 		},
 		{
 			dossierId: 24,
@@ -300,7 +309,8 @@ module.exports = {
 			category: "Platform",
 			description: "The idea behind Lumens is how they may facilitate multi-currency transactions at some point. The token can be used as a “bridge” between different currencies that do not have their own direct market.",
 			technology: "Distributed Exchange",
-			location: "https://www.stellar.org/lumens/" 
+			location: "",
+			website: "https://www.stellar.org/lumens/"
 		},
 		{
 			dossierId: 25,
@@ -312,8 +322,8 @@ module.exports = {
 			category: "Media",
 			description: "Steemit is a social network and content rewards platform that makes the crowd the beneficiaries of the attention economy. It does this be rewarding users with STEEM.Steemit has redefined social media by building a living breathing and growing social economy; a community where users are getting rewarded for sharing their voice.",
 			technology: "Publishing Platform",
-			location: "https://steemit.com/",
-			website: "https://www.reddit.com/r/steemit/" 
+			location: "",
+			website: "https://steemit.com/" 
 		},
 		{
 			dossierId: 26,
@@ -325,8 +335,8 @@ module.exports = {
 			category: "Fog Computing",
 			description: "MaidSafe is a platform the protocols are based on a voluntary 'contract' between self-authenticating users and the network itself. Essentially this eliminates the need for third party involvement password transmission or interaction from other humans.",
 			technology: "Decentralized Internet",
-			location: "https://maidsafe.net/",
-			website: "https://www.reddit.com/r/maidsafe/" 
+			location: "",
+			website: "https://maidsafe.net/" 
 		},
 		{
 			dossierId: 27,
@@ -338,8 +348,8 @@ module.exports = {
 			category: "Digital Asset",
 			description: "Tethers exists on blockchains through the Omni Protocol. The Omni Protocol is open source software that interfaces with blockchains to allow for the issuance and redemption of cryptocurrency tokens in our case “tethers”. Tether Platform currencies are 100% backed by actual fiat currency assets in our reserve account. Tethers are redeemable and exchangeable pursuant to Tether Limited’s terms of service. The conversion rate is 1 tether USD₮ equals 1 USD. The Tether Platform is fully reserved when the sum of all tethers in circulation is greater than or equal to the balance of fiat currency held in our reserve. Through our Transparency page anyone can view both of these numbers in near real-time. ",
 			technology: "Maintains 1 USD Parity",
-			location: "https://tether.to/",
-			website: "https://www.reddit.com/r/Tether/" 
+			location: "",
+			website: "https://tether.to/" 
 		},
 		{
 			dossierId: 28,
@@ -350,9 +360,9 @@ module.exports = {
 			class: "FUNCTIONAL TOKEN",
 			category: "Fog Computing",
 			description: "Golem is a global open sourced decentralized supercomputer that anyone can access. It's made up of the combined power of user's machines from personal laptops to entire datacenters.Anyone will be able to use Golem to compute (almost) any program you can think of from rendering to research to running websites in a completely decentralized & inexpensive way. ",
-			technology: "Piece of Supercomputer",
-			location: "https://golem.network/",
-			website: "https://www.reddit.com/r/GolemProject/" 
+			technology: "Distributed Computing",
+			location: "",
+			website: "https://golem.network/" 
 		},
 		{
 			dossierId: 29,
@@ -363,8 +373,9 @@ module.exports = {
 			class: "FUNCTIONAL TOKEN",
 			category: "Prediction",
 			description: "Augur is a prediction market platform that rewards you for correctly predicting future real-world events.",
-			technology: "Prediction Markethttps://augur.net/",
-			location: "https://www.reddit.com/r/Augur/" 
+			technology: "Prediction Market",
+			location: "",
+			website: "https://augur.net/"
 		},
 		{
 			dossierId: 30,
@@ -372,12 +383,12 @@ module.exports = {
 			name: "Iconomi",
 			symbol: "ICN",
 			cap: "MidCap",
-			class: "TOKENIZED SECURITY (NON COMPLIANT)",
-			category: "Security",
+			class: "UNRATED",
+			category: "UNRATED",
 			description: "ICONOMI is a fintech start-up company developing a blockchain-based ICONOMI digital asset management platform. Using Ethereum smart contracts ICONOMI started value token services in a revolutionary way. From the beginning we have been building a different kind of company that connects people around the world through the latest disruptive ideas and provides them with a unique set of tools to take an active part in the distributed economy. ICONOMI's mission is to give everyone the chance to enter the world of digital assets and make the new economy more open and connected.",
 			technology: "Dividend-like Coin",
-			location: "https://www.iconomi.net/",
-			website: "https://www.reddit.com/r/Iconomi/" 
+			location: "",
+			website: "https://www.iconomi.net/" 
 		},
 		{
 			dossierId: 31,
@@ -388,9 +399,9 @@ module.exports = {
 			class: "CRYPTOCURRENCY",
 			category: "Meme",
 			description: "Dogecoin is a decentralized peer-to-peer digital currency that enables you to easily send money online. Think of it as the internet currency. ",
-			technology: "Memehttp://dogecoin.com/",
-			location: "https://en.wikipedia.org/wiki/Dogecoin",
-			website: "https://www.reddit.com/r/Doge/" 
+			technology: "Meme",
+			location: "",
+			website: "http://dogecoin.com/" 
 		},
 		{
 			dossierId: 32,
@@ -401,8 +412,9 @@ module.exports = {
 			class: "FUNCTIONAL TOKEN",
 			category: "Media",
 			description: "Basic Attention Token radically improves the efficiency of digital advertising by creating a new token that can be exchanged between publishers advertisers and users. It all happens on the Ethereum blockchain. The token can be used to obtain a variety of advertising and attention-based services on the Brave platform. The utility of the token is based on user attention which simply means a person’s focused mental engagement. ",
-			technology: "Advertisementshttps://basicattentiontoken.org/",
-			location: "https://www.reddit.com/r/BATProject/" 
+			technology: "Advertisements",
+			location: "",
+			website: "https://basicattentiontoken.org/"
 		},
 		{
 			dossierId: 33,
@@ -427,8 +439,8 @@ module.exports = {
 			category: "Fog Computing",
 			description: "Sia splits apart encrypts and distributes your files across a decentralized network. Since you hold the keys you own your data. No outside company can access or control your files unlike traditional cloud storage providers. ",
 			technology: "Distributed Decentralized Data Storage",
-			location: "http://sia.tech/",
-			website: "https://www.reddit.com/r/siacoin/" 
+			location: "",
+			website: "http://sia.tech/" 
 		},
 		{
 			dossierId: 35,
@@ -439,8 +451,9 @@ module.exports = {
 			class: "Cryptocurrency",
 			category: "Platform",
 			description: "DigiByte is a rapidly growing three year old decentralized global blockchain with a focus on cyber security payments & secure communications.",
-			technology: "Cryptocurrencyhttps://digibyte.co/",
-			location: "https://en.wikipedia.org/wiki/DigiBytehttps://www.reddit.com/r/Digibyte/" 
+			technology: "Cryptocurrency",
+			location: "",
+			website: "https://digibyte.co/"
 		},
 		{
 			dossierId: 36,
@@ -452,8 +465,8 @@ module.exports = {
 			category: "Digital Asset",
 			description: "ARK provides users developers and startups with innovative blockchain technologies. Accessible via push button clone-able blockchains and our SmartBridge technology. ARK aims to create an entire ecosystem of linked chains and a virtual spiderweb of endless use-cases that make ARK highly flexible adaptable and scalable. ARK is a secure platform designed for mass adoption and will deliver the services that consumers want and developers need. ",
 			technology: "Functional Smart Bridge",
-			location: "https://ark.io/",
-			website: "https://www.reddit.com/r/ArkEcosystem/" 
+			location: "",
+			website: "https://ark.io/" 
 		},
 		{
 			dossierId: 37,
@@ -465,8 +478,8 @@ module.exports = {
 			category: "Platform",
 			description: "METAL (MTL) is a native currency. METAL is fairly distributed through a process known as: Proof of Processed Payments (PoPP). When you send money or make purchases you earn a little reward in METAL for every dollar you spend.",
 			technology: "Money-Back Purchases",
-			location: "https://www.metalpay.com/",
-			website: "https://www.reddit.com/r/MetalPay/" 
+			location: "",
+			website: "https://www.metalpay.com/" 
 		},
 		{
 			dossierId: 38,
@@ -477,8 +490,9 @@ module.exports = {
 			class: "UNRATED",
 			category: "Platform",
 			description: "High performing exchange where Binary + Finance = Binance ",
-			technology: "Lower Fees on Exchangehttps://www.binance.com/",
-			location: "https://www.reddit.com/r/binance/" 
+			technology: "Lower Fees on Exchange",
+			location: "",
+			website: "https://www.binance.com/"
 		},
 		{
 			dossierId: 39,
@@ -489,8 +503,9 @@ module.exports = {
 			class: "CRYPTOCURRENCY",
 			category: "Governance",
 			description: "Decred is an open and progressive cryptocurrency with a system of community-based governance integrated into its blockchain. ",
-			technology: "POW+POS Hybridge Governance Votinghttps://www.decred.org/",
-			location: "https://www.reddit.com/r/decred/" 
+			technology: "POW+POS Hybridge Governance Voting",
+			location: "",
+			website: "https://www.decred.org/"
 		},
 		{
 			dossierId: 40,
@@ -501,8 +516,9 @@ module.exports = {
 			class: "UNRATED",
 			category: "Digital Asset",
 			description: "Byteball data is stored and ordered using directed acyclic graph(DAG) rather than blockchain. This allows all users to secure each other's data by referencing earlier data units created by other users and also removes scalability limits common for blockchains such as blocksize issue.Blockless design is simpler because there are no blocks there are only transactions. Users just add their transactions to the end of the DAG themselves they don't have to wait when miners create a new block and there is no guesswork whether miners will include your transaction in the block.",
-			technology: "Directed-Acyclic Graph (DAG) Transactionshttps://byteball.org/",
-			location: "https://www.reddit.com/r/ByteBall/" 
+			technology: "Directed-Acyclic Graph (DAG) Transactions",
+			location: "",
+			website: "https://byteball.org/"
 		},
 		{
 			dossierId: 41,
@@ -511,10 +527,11 @@ module.exports = {
 			symbol: "MCAP",
 			cap: "MidCap",
 			class: "UNRATED",
-			category: "Security",
+			category: "UNRATED",
 			description: " Platform for analysis and buying digital assets ",
-			technology: "Security",
-			location: "https://bitcoingrowthfund.com/mcap" 
+			technology: "UNRATED",
+			location: "",
+			website: "https://www.mcaplabs.com/"
 		},
 		{
 			dossierId: 42,
@@ -525,8 +542,9 @@ module.exports = {
 			class: "CRYPTOCURRENCY",
 			category: "Privacy",
 			description: " PIVX is a transactional security and privacy-focused decentralized open source cryptocurrency.  ",
-			technology: "Private Instant Verified Transactionhttps://pivx.org/",
-			location: "https://www.reddit.com/r/pivx/" 
+			technology: "Private Instant Verified Transaction",
+			location: "",
+			website: "https://pivx.org/"
 		},
 		{
 			dossierId: 43,
@@ -537,8 +555,9 @@ module.exports = {
 			class: "UNRATED",
 			category: "Infrastructure",
 			description: " The Ardor Main Chain will be where all Ardor tokens (ARDR) will reside. It will serve as the system that secures all child chains and processes their transactions. While some transactions will be possible on the Main Chain such as exchanging ARDR from one account to the other most features will be unavailable on the chain itself in order to improve its performance and reduce blockchain bloat. Because it is 100% Proof-of-Stake no additional processing will be needed for mining as no new tokens will be created. ",
-			technology: "Mainchain Childchainshttps://www.ardorplatform.org/",
-			location: "https://www.reddit.com/r/Ardor/" 
+			technology: "Mainchain Childchains",
+			location: "",
+			website: "https://www.ardorplatform.org/"
 		},
 		{
 			dossierId: 44,
@@ -549,8 +568,9 @@ module.exports = {
 			class: "UNRATED",
 			category: "Infrastructure",
 			description: " The Blocknet is a revolutionary advancement in cryptographic technology: a true peer-to-peer protocol between nodes on different blockchains. This is the foundation of a technology stack incorporating an API and an application platform which enables open-ended application possibilities and vastly reduces development time. ",
-			technology: "Cross-Blockchain Nodeshttps://blocknet.co/",
-			location: "https://www.reddit.com/r/theblocknet/" 
+			technology: "Cross-Blockchain Nodes",
+			location: "",
+			website: "https://blocknet.co/"
 		},
 		{
 			dossierId: 45,
@@ -561,8 +581,9 @@ module.exports = {
 			class: "UNRATED",
 			category: "Platform",
 			description: " The Bancor protocol enables built-in price discovery and a liquidity mechanism for tokens on smart contract blockchains. These “smart tokens” hold one or more other tokens in reserve and enable any party to instantly purchase or liquidate the smart token in exchange for any of its reserve tokens directly through the smart token’s contract at a continuously calculated price according to a formula which balances buy and sell volumes. ",
-			technology: "Smart Tokenshttps://www.bancor.network/",
-			location: "https://www.bancor.network/" 
+			technology: "Smart Tokens",
+			location: "",
+			website: "https://www.bancor.network/"
 		},
 		{
 			dossierId: 46,
@@ -573,8 +594,9 @@ module.exports = {
 			class: "FUNCTIONAL TOKEN",
 			category: "Platform",
 			description: " Bancor is a decentralized platform architecture with the blockchain and biometrics on the mobile device the platform provides multi-factor authentication without a username password third party authenticator or physical hardware token.",
-			technology: "Identity Verificationhttps://www.civic.com/",
-			location: "https://www.reddit.com/r/civicplatform/" 
+			technology: "Identity Verification",
+			location: "",
+			website: "https://www.civic.com/"
 		},
 		{
 			dossierId: 47,
@@ -585,8 +607,9 @@ module.exports = {
 			class: "CRYPTOCURRENCY",
 			category: "Digital Asset",
 			description: " DGX represents value on the blockchain that can be retained over time with relatively little volatility; giving it greater utility than Ether for a wide range of use-cases. Retail Rentals Salaries Commerce Lending Wealth Management. You'll even be able to use DGX to pay for your coffee using an NFC tap. DGX is in the Ethereum EIP20 format which means it can be used seamlessly in future Ethereum contracts for literally anything. It can also be used as a basis for other tokens and financial instruments that have yet to be imagined.  ",
-			technology: "DAOhttps://digix.global/dgd/",
-			location: "https://www.reddit.com/r/digix/" 
+			technology: "DAO",
+			location: "",
+			website: "https://digix.global/dgd/"
 		},
 		{
 			dossierId: 48,
@@ -597,8 +620,9 @@ module.exports = {
 			class: "FUNCTIONAL TOKEN",
 			category: "Gaming",
 			description: " FunFair is a decentralised gaming platform powered by Ethereum smart contracts. Thanks to our breakthrough technology it is the first platform to solve the big challenges that have made other blockchain casinos unplayable.",
-			technology: "ETH Casino-Platformhttps://funfair.io/",
-			location: "https://www.reddit.com/r/FunfairTech/" 
+			technology: "ETH Casino-Platform",
+			location: "",
+			website: "https://funfair.io/"
 		},
 		{
 			dossierId: 49,
@@ -609,8 +633,9 @@ module.exports = {
 			class: "CRYPTOCURRENCY",
 			category: "Gaming",
 			description: " The mission is to turn GameCredits into a globally-recognized universal currency of the entire gaming world ",
-			technology: "Game currencyhttps://gamecredits.com/",
-			location: "https://www.reddit.com/r/GameCreditsCrypto/" 
+			technology: "Game currency",
+			location: "",
+			website: "https://gamecredits.com/"
 		},
 		{
 			dossierId: 50,
@@ -621,8 +646,9 @@ module.exports = {
 			class: "FUNCTIONAL TOKEN",
 			category: "Platform",
 			description: "Gas is part of the Neo infrastructure which is consumed to deploy smart contracts. It acts as the functional currency to make dApps run smoothly.",
-			technology: "The Ether of NEOhttps://neo.org/",
-			location: "https://www.reddit.com/r/NEO/" 
+			technology: "The Ether of NEO",
+			location: "",
+			website: "https://neo.org/"
 		},
 		{
 			dossierId: 51,
@@ -633,8 +659,9 @@ module.exports = {
 			class: "UNRATED",
 			category: "Prediction",
 			description: " Based on Ethereum — The next generation blockchain network.Speculate on anything with an easy-to-use prediction market.",
-			technology: "Prediction Platformhttps://gnosis.pm/",
-			location: "https://www.reddit.com/r/gnosisPM/" 
+			technology: "Prediction Platform",
+			location: "",
+			website: "https://gnosis.pm/"
 		},
 		{
 			dossierId: 52,
@@ -646,7 +673,8 @@ module.exports = {
 			category: "Platform",
 			description: " GXChain is in itself a public chain that supports application development and digital currency issuance. We will gradually liberalize GXChain and our data support so that the third parties are able to develop new applications. GXShares are consumed in all application scenarios on GXChain when they are burnt and used as medium of payment.",
             technology: "Decentralized Data Exchange", 
-            location: ""
+			location: "",
+			website:"https://gxs.gxb.io/"
 		},
 		{
 			dossierId: 53,
@@ -658,8 +686,8 @@ module.exports = {
 			category: "Platform",
 			description: "Komodo presents its decentralized ICO platform (dICO). This technology guarantees coin developers to launch a transparent coin offering while maintaining investors’ privacy through Komodo’s built-in privacy features. For the first time in crypto history it’s possible to issue and distribute native cryptocurrencies without a trusted third party.So a dICO doesn’t differentiate itself from other ICOs by decentralization only it also needs Komodo Platform’s Jumblr technology to guarantee complete privacy for all ICO parties. Furthermore dICOs on Komodo Platform don’t require high fees as each asset chain is an independent blockchain secured by dPoW enabling all dICO transaction fees to be paid with the dICO coin.Komodo Platform’s strategic partner Monaize is going to be the first to use this revolutionary technology. Their ICO will be the first of its kind and will also put Komodo Platform in the spotlights.",
 			technology: "Decentralized ICO platform",
-			location: "https://komodoplatform.com/",
-			website: "https://www.reddit.com/r/komodoplatform/" 
+			location: "",
+			website: "https://komodoplatform.com/" 
 		},
 		{
 			dossierId: 54,
@@ -671,8 +699,8 @@ module.exports = {
 			category: "Digital Asset",
 			description: "Nexus seeks to Free humankind from centralized systems. Being decentralized is not merely enough. We must decentralize the decentralization. Using software and hardware Nexus seeks to build the foundation for the most decentralized system to ever be developed: Nexus Earth. This network will empower everyone from the first world to the third world. Not everyone has money but everyone has time. The time has come to decentralize everything. The foundations of cryptocurrency should be built upon decentralized principles. Nexus seeks to fulfill this mission. ",
 			technology: "Decentralized Satellites",
-			location: "http://www.nexusearth.com/",
-			website: "https://www.reddit.com/r/nexusearth/" 
+			location: "",
+			website: "http://www.nexusearth.com/" 
 		},
 		{
 			dossierId: 55,
@@ -684,7 +712,8 @@ module.exports = {
 			category: "Platform",
 			description: "Populous is an online platform that matchmakes invoice sellers to invoice buyers hosted on the blockchain. This enables the invoice buyers to receive interest on their invoice purchase while invoice sellers receive short-term cash flow.The company’s unique selling proposition lies in its ability to provide value to both invoice sellers and buyers with interest rate bidding and XBRL targeted client acquisition respectively.",
 			technology: "Connects Invoice Buyers and Sellers",
-			location: "http://populous.co/" 
+			location: "",
+			website: "http://populous.co/"
 		},
 		{
 			dossierId: 56,
@@ -696,8 +725,8 @@ module.exports = {
 			category: "Platform",
 			description: "With Status your mobile device becomes a light client node on the Ethereum Network enabling you to access Ethereum’s entire ecosystem from anywhere.",
 			technology: "Mobile Node",
-			location: "https://status.im/",
-			website: "https://www.reddit.com/r/statusim/" 
+			location: "",
+			website: "https://status.im/" 
 		},
 		{
 			dossierId: 57,
@@ -709,7 +738,8 @@ module.exports = {
 			category: "Platform",
 			description: "Veritaseum is a smart contracts-based peer-to-peer wallet interface (in beta)",
 			technology: "Smart Contracts with Others",
-			location: "http://veritas.veritaseum.com/" 
+			location: "",
+			website: "http://veritas.veritaseum.com/"
 		},
 		{
 			dossierId: 58,
@@ -721,8 +751,8 @@ module.exports = {
 			category: "Infrastructure",
 			description: "As the token space continues to develop the need to exchange these assets will be compounded. 0x protocol will act as a critical piece of infrastructure for the token economy allowing Ethereum smart contracts to programmatically and seamlessly exchange Ethereum-based assets.",
 			technology: "Token Trading Protocol",
-			location: "https://0xproject.com/",
-			website: "https://www.reddit.com/r/0xProject/" 
+			location: "",
+			website: "https://0xproject.com/" 
 		},
 		{
 			dossierId: 59,
@@ -734,8 +764,8 @@ module.exports = {
 			category: "Platform",
 			description: "Firms or companies exist in order to create value by using resources to create products or provide services. However intermediaries and third parties such as governments decrease the output of those organizations by imposing restrictions and creating complex regulatory frameworks.Aragon was born to disintermediate the creation and maintenance of companies and other organizational structures.",
 			technology: "Company Maintenance",
-			location: "https://aragon.one/",
-			website: "https://www.reddit.com/r/aragonproject/" 
+			location: "",
+			website: "https://aragon.one/" 
 		},
 		{
 			dossierId: 60,
@@ -746,8 +776,9 @@ module.exports = {
 			class: "Cryptocurrency",
 			category: "Digital Asset",
 			description: "Old.",
-			technology: "Pre-Komodohttp://bitcoindark.com/",
-			location: "https://www.reddit.com/r/bitcoindark/" 
+			technology: "Pre-Komodo",
+			location: "",
+			website: "http://bitcoindark.com/"
 		},
 		{
 			dossierId: 61,
@@ -759,8 +790,8 @@ module.exports = {
 			category: "Platform",
 			description: "Bytom is an interactive protocol of multiple byte assets. Heterogeneous byte-assets (indigenous digital currency digital assets) that operate in different forms on the Bytom Blockchain and atomic assets (warrants securities dividends bonds intelligence information forecasting information and other information that exist in the physical world) can be registered exchanged gambled and engaged in other more complicated and contract-based interoperations via Bytom.",
 			technology: "Digital Assets",
-			location: "http://bytom.io/",
-			website: "https://www.reddit.com/r/BytomBlockchain/" 
+			location: "",
+			website: "http://bytom.io/" 
 		},
 		{
 			dossierId: 62,
@@ -772,8 +803,8 @@ module.exports = {
 			category: "Platform",
 			description: "Cofound.it is a platform that connects you to teams that have trained to become serious blockchain businesses ",
 			technology: "Business Training Platform",
-			location: "https://cofound.it/en/",
-			website: "https://www.reddit.com/r/cofoundit/" 
+			location: "",
+			website: "https://cofound.it/en/" 
 		},
 		{
 			dossierId: 63,
@@ -785,8 +816,8 @@ module.exports = {
 			category: "Media",
 			description: " DECENT is a Blockchain Content Distribution Platform that is Open-Source and utilizes Blockchain to ensure trust and security. Its intention is to revolutionize data distribution on the Internet. ",
 			technology: "Data Distribution",
-			location: "https://decent.ch/",
-			website: "https://www.reddit.com/r/Decentplatform/" 
+			location: "",
+			website: "https://decent.ch/" 
 		},
 		{
 			dossierId: 64,
@@ -798,8 +829,8 @@ module.exports = {
 			category: "Gaming",
 			description: "The First Ethereum based Casino.",
 			technology: "Casino",
-			location: "https://edgeless.io/",
-			website: "https://www.reddit.com/r/Edgeless/" 
+			location: "",
+			website: "https://edgeless.io/" 
 		},
 		{
 			dossierId: 65,
@@ -811,7 +842,8 @@ module.exports = {
 			category: "Infrastructure",
 			description: "Metaverse is a decentralised platform based on blockchain technology. Metaverse is building a web of Smart Properties and establishing an open ecosystem in which digital value can be circulated freely. ",
             technology: "Digital Identity Decentralized",
-            location: ""
+			location: "",
+			website: "https://mvs.org/"
 		},
 		{
 			dossierId: 66,
@@ -823,8 +855,8 @@ module.exports = {
 			category: "Platform",
 			description: "The Lykke Wallet mobile application for iOS and Android is the key element of the Lykke trading ecosystem.Our wallet app makes it easy for you to trade currencies and cryptocurrencies. You can buy and sell assets such as bitcoin and ether on the open-source Lykke Exchange our next-generation trading platform with immediate settlement and direct ownership thanks to distributed ledger technology all at zero percent commission. ",
 			technology: "Wallet/Trading App",
-			location: "https://www.lykke.com/",
-			website: "https://www.reddit.com/r/lykke/" 
+			location: "",
+			website: "https://www.lykke.com/" 
 		},
 		{
 			dossierId: 67,
@@ -832,12 +864,12 @@ module.exports = {
 			name: "Monaco",
 			symbol: "MCO",
 			cap: "SmallCap",
-			class: "TOKENIZED SECURITY (NON COMPLIANT)",
-			category: "Security",
+			class: "UNRATED",
+			category: "UNRATED",
 			description: " ounded in 2016 Monaco aims to put cryptocurrency in everyone's wallet. Monaco eliminates all currency exchange fees and allows you to send and spend cryptocurrency at your fingertips.",
 			technology: "Debit Card Cashback",
-			location: "https://mona.co/",
-			website: "https://www.reddit.com/r/MonacoCard/" 
+			location: "",
+			website: "https://mona.co/" 
 		},
 		{
 			dossierId: 68,
@@ -849,8 +881,8 @@ module.exports = {
 			category: "Gaming",
 			description: "MobileGo tokens will be used to gamify the mobile platform and to incentivize gamers for loyalty and participation through rewards.MobileGo tokens will also allow for smart contract technology. MobileGo tokens will allow for the development of a decentralized virtual mobile gamer marketplacethe ability for gamer vs. gamer decentralized match play and decentralized tournaments run on smart contracts. ",
 			technology: "Game currency",
-			location: "https://mobilego.io/",
-			website: "https://www.reddit.com/r/MobileGo/" 
+			location: "",
+			website: "https://mobilego.io/" 
 		},
 		{
 			dossierId: 69,
@@ -862,8 +894,8 @@ module.exports = {
 			category: "Digital Asset",
 			description: " Nav Coin is a decentralized cryptocurrency based on the latest version of Bitcoin Core.On top of a solid foundation Nav Coin supports SegWit functionality and easy to use wallets which are packed with advanced privacy features. Using NavTech technology you get the option to choose private transactions that protect your data and identity while making purchases online. ",
 			technology: "Privacy SegWit",
-			location: "http://www.navcoin.org/",
-			website: "https://www.reddit.com/r/NavCoin/" 
+			location: "",
+			website: "http://www.navcoin.org/" 
 		},
 		{
 			dossierId: 70,
@@ -875,8 +907,8 @@ module.exports = {
 			category: "Gaming",
 			description: " You've heard of Bitcoin? Well this is Bitcoin's little brother NoLimitCoin. It's a currency rapidly appreciating in value which cannot be said for many fiat currencies including the US dollar. Take a look at the adjacent graph charting the enormous growth in value of NLC2 this year. Aside from that you can send coins to anyone else who has a NoLimitCoin wallet and they will receive the money within seconds with very low transaction fees all over the world! ",
 			technology: "Fantasy Sports",
-			location: "https://www.nolimitcoin.org/",
-			website: "https://www.reddit.com/r/nolimitcoin/" 
+			location: "",
+			website: "https://www.nolimitcoin.org/" 
 		},
 		{
 			dossierId: 71,
@@ -888,8 +920,8 @@ module.exports = {
 			category: "Infrastructure",
 			description: "Nxt is an advanced blockchain platform which builds on and improves the basic functionality of pioneering cryptocurrencies such as Bitcoin.Cryptocurrency and financial systems are the first widely used applications of blockchain technology but the blockchain and its associated technology can be used for so much more.Nxt revolutionises the financial technology crowdfunding and governance industries by providing not only the groundbreaking NXT crypto-currency but also a powerful modular toolset to build with in any way Nxt users can imagine. Nxt gives users complete freedom to create their own applications. ",
 			technology: "Creative Platforum",
-			location: "https://nxtplatform.org/",
-			website: "https://www.reddit.com/r/NXT/" 
+			location: "",
+			website: "https://nxtplatform.org/" 
 		},
 		{
 			dossierId: 72,
@@ -901,8 +933,8 @@ module.exports = {
 			category: "Platform",
 			description: " Particl is an open source decentralized privacy platform. Built for global person to person and business to person eCommerce. ",
 			technology: "E-commerce",
-			location: "https://particl.io/",
-			website: "https://www.reddit.com/r/Particl/" 
+			location: "",
+			website: "https://particl.io/" 
 		},
 		{
 			dossierId: 73,
@@ -914,8 +946,8 @@ module.exports = {
 			category: "Fog Computing",
 			description: " iEx.ec aims at providing distributed applications running on the blockchain a scalable secure and easy access to the services the data-sets and the computing resources they need. This technology relies on the Ethereum smart contracts and allows building a virtual Cloud infrastructure that provides high-performance computing services on demand. ",
 			technology: "Ethereum-Based Computing",
-			location: "http://iex.ec/",
-			website: "https://www.reddit.com/r/iexec/" 
+			location: "",
+			website: "http://iex.ec/" 
 		},
 		{
 			dossierId: 74,
@@ -927,8 +959,8 @@ module.exports = {
 			category: "Media",
 			description: " SingularDTV is a blockchain entertainment studio laying the foundation for a decentralized entertainment industry. Building the future of rights management project funding and peer-to-peer distribution SingularDTV’s platform empowers artists and creators with powerful tools to manage projects from development to distribution. ",
 			technology: "Ethertainment Studio",
-			location: "https://singulardtv.com/",
-			website: "https://www.reddit.com/r/SingularDTV/" 
+			location: "",
+			website: "https://singulardtv.com/" 
 		},
 		{
 			dossierId: 75,
@@ -940,8 +972,8 @@ module.exports = {
 			category: "Fog Computing",
 			description: " Storj is an open source project that aims to offer a completely decentralized secure and efficient cloud storage service that also serves as a peer-to-peer payment system like Bitcoin. ",
 			technology: "dCloud Storage",
-			location: "https://storj.io/",
-			website: "https://www.reddit.com/r/storj/" 
+			location: "",
+			website: "https://storj.io/" 
 		},
 		{
 			dossierId: 76,
@@ -953,8 +985,8 @@ module.exports = {
 			category: "Platform",
 			description: " We have developed a state-of-the-art marketplace where you can securely and reliably buy and sell any items you wish. Entire stores can be created directly through the marketplace where you can sell your own products or re-sell others’ products for commission. ",
 			technology: "dMarket Place",
-			location: "http://syscoin.org/",
-			website: "https://www.reddit.com/r/SysCoin/" 
+			location: "",
+			website: "http://syscoin.org/" 
 		},
 		{
 			dossierId: 77,
@@ -966,8 +998,8 @@ module.exports = {
 			category: "Platform",
 			description: " Tierion is using the blockchain to transform how the world secures and shares data  ",
 			technology: "Verifiable Data",
-			location: "https://tierion.com/",
-			website: "https://www.reddit.com/r/tierion/" 
+			location: "",
+			website: "https://tierion.com/" 
 		},
 		{
 			dossierId: 78,
@@ -979,8 +1011,8 @@ module.exports = {
 			category: "Platform",
 			description: " Ubiq is a decentralized platform which allows the creation and implementation of smart contracts and decentralized applications. Built upon an improved Ethereum codebase the Ubiq blockchain acts as a large globally distributed ledger and supercomputer allowing developers to create decentralized and automated solutions to thousands of tasks which today are carried out by third party intermediaries.",
 			technology: "Distributed Ledger + Supercomputer",
-			location: "https://www.ubiqsmart.com/",
-			website: "https://www.reddit.com/r/Ubiq/" 
+			location: "",
+			website: "https://www.ubiqsmart.com/" 
 		},
 		{
 			dossierId: 79,
@@ -988,12 +1020,12 @@ module.exports = {
 			name: "Wings",
 			symbol: "WINGS",
 			cap: "SmallCap",
-			class: "TOKENIZED SECURITY (NON COMPLIANT)",
-			category: "Security",
+			class: "UNRATED",
+			category: "UNRATED",
 			description: " As the world advances in technological capabilities and people become more interconnected globally how we fund and organize people and machines is changing. Decentralized Autonomous Organizations are one of the most powerful concepts of the coming decade. DAOs use the combined power of blockchain technology and programmable contracts to create efficient transparent and trustless organizations. The applications and advantages of this technology are endless. The WINGS’ vision is the mainstream adoption of DAO technology for the benefit of people and society.  ",
 			technology: "Manges Projects",
-			location: "https://www.wings.ai/#!/home/discover",
-			website: "https://www.reddit.com/r/WingsDAO/" 
+			location: "",
+			website: "https://www.wings.ai/#!/home/discover" 
 		},
 		{
 			dossierId: 80,
@@ -1005,8 +1037,8 @@ module.exports = {
 			category: "Fog Computing",
 			description: " With Elastic instead of specific use cases a use case has to be coded by the user of the system in Elastic’s own programming language - Elastic PL. It is similar to C but with limited functionality so it can be guaranteed that Elastic code can be executed on other machines without causing any harm. You can write a program in Elastic PL and be sure that if executed correctly no exploits no endless loops no data leakage.",
 			technology: "Supercomputer; Programming Language",
-			location: "https://www.elastic.pw/",
-			website: "https://www.reddit.com/r/XEL/" 
+			location: "",
+			website: "https://www.elastic.pw/" 
 		},
 		{
 			dossierId: 81,
@@ -1018,8 +1050,8 @@ module.exports = {
 			category: "Privacy",
 			description: " Verge is a decentralized currency designed for users who value privacy. It improves upon the original Bitcoin blockchain by using multiple anonymity-centric networks such as Tor and I2P. It utilizes multi-algorithm mining support to improve security and provide equal distribution of coins to miners. ",
 			technology: "TOR + I2P",
-			location: "https://vergecurrency.com/",
-			website: "https://www.reddit.com/r/vergecurrency/" 
+			location: "",
+			website: "https://vergecurrency.com/" 
 		},
 		{
 			dossierId: 82,
@@ -1030,8 +1062,9 @@ module.exports = {
 			class: "UNRATED",
 			category: "Gaming",
 			description: " FirstBlood is a decentralized eSports platform built on Ethereum. It allows players to test their skills and to bet on games without being subject to downtime hacks traditional money transfers financial regulations and middleman corruption and fees. FirstBlood intends to make the eSports industry more transparent and efficient while bringing in a new demographic into the crypto community thus bringing cryptocurrencies one step closer to mainstream adoption.  ",
-            technology: "eSports Challenge Systemhttps://firstblood.io/#/home",
-            location: ""
+            technology: "eSports Challenge System",
+			location: "",
+			website: "https://firstblood.io/#/home"
 		},
 		{
 			dossierId: 83,
@@ -1043,7 +1076,8 @@ module.exports = {
 			category: "Media",
 			description: " AdEx is a blockchain-based ad exchange aiming at disrupting the existing online advertising landscape and address its significant problems: advertising fraud privacy and consent to receiving sponsored messages etc.  ",
 			technology: "Advertisements",
-			location: "http://adex.network/" 
+			location: "",
+			website: "http://adex.network/"
 		},
 		{
 			dossierId: 84,
@@ -1055,7 +1089,8 @@ module.exports = {
 			category: "Platform",
 			description: "CoinDash is an operating system for crypto assets.",
 			technology: "Asset Management System",
-			location: "https://www.coindash.io/" 
+			location: "",
+			website: "https://www.coindash.io/"
 		},
 		{
 			dossierId: 85,
@@ -1067,8 +1102,8 @@ module.exports = {
 			category: "Platform",
 			description: "District0x is network of decentralized markets and communities. Create operate and govern. Powered by Ethereum Aragon and IPFS. ",
 			technology: "Blockchain for Marketplaces",
-			location: "https://district0x.io/",
-			website: "https://www.reddit.com/r/district0x/" 
+			location: "",
+			website: "https://district0x.io/" 
 		},
 		{
 			dossierId: 86,
@@ -1080,8 +1115,8 @@ module.exports = {
 			category: "Platform",
 			description: " Emercoin is one of the world's leading digital currency and blockchain platforms. Emercoin allows users to exchange money and valuable information anywhere in the world at any time quickly securely and affordably.   ",
 			technology: "Business Personal Use",
-			location: "https://emercoin.com/",
-			website: "https://www.reddit.com/r/EmerCoin/" 
+			location: "",
+			website: "https://emercoin.com/" 
 		},
 		{
 			dossierId: 87,
@@ -1093,7 +1128,8 @@ module.exports = {
 			category: "Platform",
 			description: " FirstCoin is an alternative digital currency that differs from Bitcoin characterized by faster transactions. ",
 			technology: "BTC",
-			location: "http://firstcoinproject.com/" 
+			location: "",
+			website: "http://firstcoinproject.com/"
 		},
 		{
 			dossierId: 88,
@@ -1103,7 +1139,8 @@ module.exports = {
 			cap: "SmallCap",
 			class: "UNRATED",
             category: "Dead Coin",
-            location: ""
+			location: "",
+			website: ""
 		},
 		{
 			dossierId: 89,
@@ -1115,8 +1152,8 @@ module.exports = {
 			category: "Infrastructure",
 			description: "Slated to follow our launch of DIONS & POS CiPher we will introduce project Chameleon.Our Chameleon chain and  ecosystem will provide the possibility for companies to spin up their own Blockchain while enjoying the advanced features of our main I/O Digital Blockchain. Chameleon will provide a portal to all features built in the I/O Digital Blockchain ecosystem enabling all features in the network while also maintaining privacy and full control of said private blockchains. It will also act as an auxiliary Blockchain to IOC.It will serve as a sidechain not only to IOC but also to Bitcoin. For companies looking to advance into the blockchain space Chameleon will also enable the flexibility of launching a chain without having a dedicated development team thus making it easier to manage and control features. Even in the event of an update from our main chains this will not affect any of the private Blockchains. These will be updated and your business can run as usual. Companies using their own Private Blockchain will be the custodians of their data in their own Blockchain making it easier to manage and control. ",
 			technology: "Mainchain Sidechains",
-			location: "https://www.iocoin.io/",
-			website: "https://www.reddit.com/r/IODigitalCurrency/" 
+			location: "",
+			website: "https://www.iocoin.io/" 
 		},
 		{
 			dossierId: 90,
@@ -1128,8 +1165,8 @@ module.exports = {
 			category: "Platform",
 			description: "LEOcoin wallets can be used to communicate privately with other LEOcoin wallets. This change turns the communications industry on its head and creates a new way of communicating privately using digital currency wallets.Also LEOcoin wallets can now send LEOcoin privately to any other LEOcoin wallet in the world.These two improvements combined with the innovative approach of LEOcoin to Proof of Stake mean that LEOcoin can now do things in ways that no other digital currency can.Backed by the LEOcoin Foundation the technology behind LEOcoin is once again leading the sector. ",
 			technology: "Privacy POSW",
-			location: "http://www.leocoin.org/",
-			website: "https://www.reddit.com/r/LEOcoinorg/" 
+			location: "",
+			website: "http://www.leocoin.org/" 
 		},
 		{
 			dossierId: 91,
@@ -1141,7 +1178,8 @@ module.exports = {
 			category: "Platform",
 			description: " Melon is blockchain software that seeks to enable participants to set up manage and invest in technology regulated digital hedge funds. ",
 			technology: "Asset Management",
-			location: "https://melon.network/" 
+			location: "",
+			website: "https://melon.network/"
 		},
 		{
 			dossierId: 92,
@@ -1153,7 +1191,8 @@ module.exports = {
 			category: "Digital Asset",
 			description: "With Gulden you send money to each other wire it to any IBAN account pay at Gulden or Bitcoin merchants and enjoy a very healthy return. ",
 			technology: "Digital Asset",
-			location: "https://gulden.com/" 
+			location: "",
+			website: "https://gulden.com/"
 		},
 		{
 			dossierId: 93,
@@ -1165,7 +1204,7 @@ module.exports = {
 			category: "Platform",
 			description: " THE PILLAR PROJECT is a collaboration of the blockchain innovation community of 20|30. We want to get rid of old ways of thinking applied to new technology. While most people are busy building decentralized apps we questioned the idea of apps in general and decided it was time to go in a new direction.   ",
 			technology: "Wallet Dashboard",
-			location: "Zug Switzerland",
+			location: "Switzerland",
 			website: "https://pillarproject.io/"
 		},
 		{
@@ -1178,7 +1217,8 @@ module.exports = {
 			category: "Digital Asset",
 			description: " Peercoin seeks to be the most secure cryptocoin at the lowest cost rewarding all users for strengthening the network by giving them a 1% annual PPC return when minting. ",
             technology: "Fair Distribution",
-            location: ""
+            location: "",
+			website: "https://peercoin.net/"
 		},
 		{
 			dossierId: 95,
@@ -1190,8 +1230,8 @@ module.exports = {
 			category: "Digital Asset",
 			description: " Peercoin seeks to be the most secure cryptocoin at the lowest cost rewarding all users for strengthening the network by giving them a 1% annual PPC return when minting. ",
 			technology: "Quantum Resistant",
-			location: "https://theqrl.org/",
-			website: "https://www.reddit.com/r/QRL/" 
+			location: "",
+			website: "https://theqrl.org/" 
 		},
 		{
 			dossierId: 96,
@@ -1202,8 +1242,9 @@ module.exports = {
 			class: "Cryptocurrency",
 			category: "Digital Asset",
 			description: " Reddcoin is the social currency that enriches people’s social lives and makes digital currency easy for the general public. Reddcoin achieves this by integrating a digital currency platform seamlessly with all major social networks to make the process of sending and receiving money fun and rewarding for everyone. ",
-			technology: "Tipping System Social Networkshttps://www.reddcoin.com/",
-			location: "https://www.reddit.com/r/reddCoin/" 
+			technology: "Tipping System Social Networks",
+			location: "",
+			website: "https://www.reddcoin.com/"
 		},
 		{
 			dossierId: 97,
@@ -1215,8 +1256,8 @@ module.exports = {
 			category: "Platform",
 			description: " At the heart RISE offers a platform for Decentralized Distributed applications Smart Contracts and Side-chain/token asset creation powered by a Delegated Proof of Stake (DPoS) blockchain.  ",
 			technology: "Ecosystem for everyone",
-			location: "https://rise.vision/",
-			website: "https://www.reddit.com/r/RiseVisionFoundation/" 
+			location: "",
+			website: "https://rise.vision/" 
 		},
 		{
 			dossierId: 98,
@@ -1228,8 +1269,8 @@ module.exports = {
 			category: "Platform",
 			description: "TokenCard introduces an underlying ERC20 token TKN holding a pro-rata claim on the TKN Asset Contract. This Asset Contract accrues a 1% licensing fee (enforced by smart contracts) on all TokenCard transactions. At any time TKN holders can redeem their share of the underlying assets by 'cashing and burning' their TKN. ",
 			technology: "Smart-Contract Debit Card",
-			location: "https://tokencard.io/",
-			website: "https://www.reddit.com/r/TokenCard/" 
+			location: "",
+			website: "https://tokencard.io/" 
 		},
 		{
 			dossierId: 99,
@@ -1241,7 +1282,8 @@ module.exports = {
 			category: "Platform",
 			description: "Based on an Ethereum-like model Asch is designed to make developers' life much easier: learning JavaScript as development language or supporting DBMS to store the transaction data all of these approaches make DApp development like traditional web application which must be extremely attractive to developers and SMEs.We believe the ecosystem of the whole platform will not be developed sustainably by specifically developers developers could be promoted.Asch is also an open platform its focus is not limited to a particular area such as finance document storage or copywrite proof but is on providing a series of underlying and abstract APIs which can be combined combined with use to enjoy almost all kinds of applications.In addition Asch system using enceced DPOS agorithm in its consensus mechanism to significantly reduce the probability of block fork and the risk of repeated payment. Most much Asch's sidechain-is-application mode can not only alleviate the blockchain inflation issue but also make DApp more resilient and characteristic. Overall Asch is a prospective low-cost one-stop solution that is being able to be incubated the next generation decentralised application.  ",
 			technology: "dApp Deployment Platform",
-			location: "https://www.asch.so/" 
+			location: "",
+			website: "https://www.asch.so/"
 		},
 		{
 			dossierId: 100,
@@ -1252,7 +1294,8 @@ module.exports = {
 			class: "UNRATED",
 			category: "Platform",
 			description: " The Counterparty protocol is open source and extensively tested. Besides allowing users to create and trade any kind of digital token Counterparty enables anyone to write specific digital agreements or programs known as Smart Contracts and execute them on the Bitcoin blockchain. Smart Contracts are a revolutionary technology which opens the door to endless possibilities. By using the Bitcoin’s decentralized ledger network and Counterparty’s built-in scripting language real-world scenarios can now be transformed into code and executed automatically with no need for an intermediary.  ",
-            technology: "Smart Contractshttps://counterparty.io/",
-            location: ""
+            technology: "Smart Contracts",
+			location: "",
+			website: "https://counterparty.io/"
         }
     ]};
