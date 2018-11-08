@@ -277,6 +277,7 @@ index | hexa       | coin
 224   | 0x800000e0 | [Smartcash](https://smartcash.cc)
 255   | 0x800000ff | [SmartHoldem](https://smartholdem.io)
 258   | 0x80000102 | [Zen Protocol](https://www.zenprotocol.com/)
+269   | 0x8000010d | [HPB](https://hpb.io)
 328   | 0x80000148 | [Blocknet](https://blocknet.co/)
 333   | 0x8000014d | [MemCoin](https://memcoin.org)
 444   | 0x800001bc | [Phore](https://phore.io)
